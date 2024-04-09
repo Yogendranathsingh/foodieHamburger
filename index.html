@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie-Hamburger</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 23px;
+        }
+
+        body {
+            background-color: rgb(247, 240, 232);
+        }
+
+        .logo {
+            border: 1px solid gray;
+        }
+
+        header {
+            height: 100px;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px 0 20px;
+            align-items: center;
+        }
+
+        header ul {
+            border: 1px solid gray;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        header li {
+            list-style: none;
+            margin: 0 45px 0 45px;
+        }
+
+        header a {
+            text-decoration: none;
+        }
+
+        main img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .outer-container {
+            padding: 40px;
+        }
+
+        .extra-padding {
+            border: 5px solid white;
+            padding-left: 320px;
+            padding-right: 320px;
+            padding-bottom: 20px;
+            /* height:100%;  */
+        }
+
+        .extra-padding div:first-child {
+            margin: 30px;
+            font-size: 43px;
+        }
+
+        main div {
+            text-align: center;
+        }
+
+        .mobile {
+            display: none;
+        }
+
+        @media only screen and (max-width:1300px) {
+            header {
+                padding: 0 10px 0 10px;
+            }
+
+            header li {
+                margin: 0 25px 0 25px;
+            }
+        }
+
+        @media only screen and (max-width:1040px) {
+            * {
+                font-size: 20px;
+            }
+
+            header li {
+                margin: 0 15px 0 15px;
+            }
+
+            .extra-padding div:first-child {
+                margin: 20px;
+                font-size: 33px;
+            }
+
+            .extra-padding {
+                padding-left: 220px;
+                padding-right: 220px;
+                /* height:100%;  */
+            }
+        }
+
+        @media only screen and (max-width:850px) {
+            * {
+                font-size: 16px;
+            }
+
+            header {
+                padding: 0 5px 0 5px;
+            }
+
+            header li {
+                margin: 0 10px 0 10px;
+            }
+
+            .extra-padding div:first-child {
+                margin: 20px;
+                font-size: 33px;
+            }
+
+            .extra-padding {
+                padding-left: 120px;
+                padding-right: 120px;
+                /* height:100%;  */
+            }
+
+        }
+
+        @media only screen and (max-width:650px) {
+            header {
+                padding: 0 25px 0 25px;
+            }
+
+            .outer-container {
+                padding: 20px;
+            }
+
+            .extra-padding div:first-child {
+                margin: 10px;
+                font-size: 23px;
+            }
+
+            .extra-padding {
+                padding-left: 70px;
+                padding-right: 70px;
+                /* height:100%;  */
+            }
+
+            header ul {
+                flex-direction: column;
+            }
+
+            .mobile {
+                display: block;
+            }
+
+            .text-bar {
+                display: none;
+            }
+
+        }
+
+        .display-none {
+            display: none;
+        }
+
+        .mobile {
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            right: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.svg" alt="">
+        </div>
+
+        <div class="mobile">
+            <img height="100%" width="100%" src="icon.png" alt="">
+        </div>
+
+        <div class="text-bar">
+            <ul>
+                <li><a href="#top-picks">Top picks</a></li>
+                <li><a href="#whopper">Whopper</a></li>
+                <li><a href="#stunner-menu">Stunner menu</a></li>
+                <li><a href="#new-foodie-collection">New foodie collection</a></li>
+                <li><a href="#deal-of-the-day">Deal of the day</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="outer-container">
+            <div>
+                <img src="img1.png" alt="">
+            </div>
+            <div>Well,you can't resist anymore!</div>
+        </div>
+
+        <div id="top-picks" class=" extra-padding">
+            <div>Top picks</div>
+            <div>
+                <img src="img2.png" alt="">
+            </div>
+        </div>
+
+        <div id="whopper" class="extra-padding">
+            <div>Whopper</div>
+            <div>
+                <img src="img3.png" alt="">
+            </div>
+        </div>
+
+        <div id="stunner-menu" class="extra-padding">
+            <div>Stunner menu</div>
+            <div>
+                <img src="img4.png" alt="">
+            </div>
+        </div>
+
+        <div id="new-foodie-collection" class="extra-padding">
+            <div>New foodie collection</div>
+            <div>
+                <img src="img5.png" alt="">
+            </div>
+        </div>
+
+        <div id="deal-of-the-day" class="extra-padding">
+            <div>Deal of the day</div>
+            <div>
+                <img src="img6.png" alt="">
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
